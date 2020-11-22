@@ -9,7 +9,7 @@ __author__ = "Stijn Janssen"
 __email__ = "stijn.janssen@student.kdg.be"
 __status__ = "Development"
 
-
+#define the correct convertion of hte time
 def time_convert(sec):
     min = sec // 60
     sec = sec % 60
@@ -19,8 +19,10 @@ def time_convert(sec):
 
 
 def main():
+    #input = enter, then start timer
     input("Press Enter to start")
     start_time = time.time()
+    #input = enter, then stop timer
     input("Press Enter to stop")
     end_time = time.time()
     time_lapsed = end_time - start_time
